@@ -1,0 +1,115 @@
+body {
+    background-color: #141e24;
+    color: #53a1b3;
+    font-family: Open Sans, Segoe UI, Helvetica Neue, Ubuntu, sans-serif;
+    font-size: 0.75rem;
+    /*display: flex;*/
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 1rem;
+    position: relative;
+    width: 45rem;
+    border: 2px solid white;
+}
+
+.button {
+    background-color: #141e24;
+    border: 0.125rem solid #316e7d;
+    box-sizing: content-box;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    height: 1.5rem;
+    width: 8rem;
+    min-width: 1.5rem;
+    outline: none;
+    overflow: hidden;
+    padding: 0;
+    text-align: center;
+    transition: background-color 250ms;
+    user-select: none;
+}
+
+.button:hover {
+    background-color: #193945;
+    transition: background-color 125ms;
+}
+
+.button:active {
+    background-color: #316e7d;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+}
+
+.logo {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.config {
+    grid-column: 2;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    grid-template-rows: repeat(3, 20px);
+}
+
+.url {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.url-value {
+    grid-column: 2;
+    grid-row: 1;
+    /*text-overflow: ellipsis;
+    overflow: hidden;
+    width: 180px;
+    white-space: nowrap;*/
+}
+
+.schema {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.tasks-title {
+    color: #e96c4c;
+    padding: 0.5rem;
+    font-weight: bold;
+}
+
+.tasks-div {
+    padding: 0 1rem 0.5rem 0.5rem;
+}
+
+.task-item-div {
+    cursor: pointer;
+}
+
+.task-item-div-active {
+    background-color: #2d3d49
+}
+
+.task-link {
+    color: #7ca5af;
+    text-decoration: none;
+}
+
+.task-link:hover {
+    color: #6db353;
+    text-decoration: underline;
+}
+
+.mail-link {
+    color: #53a1b3;
+    text-decoration: none;
+}
+
+.mail-link:hover {
+    color: #6db353;
+    text-decoration: underline;
+}

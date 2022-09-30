@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <title>Popup</title>
+    <meta charset="UTF-8">
+    <script src="axios.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="popup.css">
+</head>
+<body>
+<header>
+    <div class="header">
+        <div class="logo">
+            <a href="https://bftcom.com/" target="_blank">
+                <img alt="Logo" src="../images/128.png"/>
+            </a>
+        </div>
+        <div class="config">
+            <div class="url">JDBC URL:</div>
+            <div class="url-value" id="url-value-div">-</div>
+            <div class="schema">Schema:</div>
+            <div class="schema-value" id="schema-value-div">-</div>
+            <div class="server">Server:</div>
+            <div class="server-value" id="server-value-div">-</div>
+        </div>
+    </div>
+</header>
+<div class="tasks-title">Задачи:</div>
+
+<div id="div-content" class="tasks-div"></div>
+
+<button class="button" id="post-task-button" >Добавить</button>
+<button class="button" id="delete-task-button" style="visibility: hidden">Удалить</button>
+<footer>
+    <a class="mail-link" href="https://owa.bftcom.com/owa" target="_blank">Почта</a>
+</footer>
+
+<script src="popup.js"></script>
+</body>
+</html>
